@@ -1,0 +1,898 @@
+/* We declare a style rule for the body element like so: */
+
+/* Location of the image */
+
+/* background-image: url(images/background-photo.jpg); */
+
+/* Background image is centered vertically and horizontally at all times */
+
+/* background-position: center center; */
+
+/* Background image doesn’t tile */
+
+/* background-repeat: no-repeat; */
+
+/* Background image is fixed in the viewport so that it doesn’t move when
+the content’s height is greater than the image’s height */
+
+/* background-attachment: fixed; */
+
+/* This is what makes the background image rescale based
+on the container’s size */
+
+/* background-size: cover; */
+
+/* Set a background color that will be displayed
+while the background image is loading */
+
+/* background-color: #464646; */
+
+* {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    /* background-color: white; */
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px;
+    flex-wrap: wrap;
+    /* background-color: rgb(99, 143, 99); */
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.background-image {
+    background-image: url("./bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+
+.website-title {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    font-size: 64px;
+    width: 70%;
+    padding: 10px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
+.website-title span {
+    font-size: 44px;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    text-align: center;
+    /* width: 220%; */
+}
+
+.website-title p {
+    margin-top: 40px;
+    letter-spacing: 0.5px;
+    color: #8b8b99;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.steps-section {
+    display: flex;
+    /* border: 3px solid red; */
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.icon {
+    /* border: 2px solid green; */
+    margin-top: 10%;
+    height: 30%;
+    width: 30%;
+    filter: invert(1);
+    margin-left: 30%;
+    transform: scale(0.7, 0.7);
+    padding: 20px;
+}
+
+.icon:hover {
+    transform: scale(0.9, 0.9);
+    transition-duration: 0.5s;
+}
+
+.first-step {
+    /* border: 2px solid red; */
+    background-color: #5acda6;
+    grid-area: step-1;
+}
+
+.second-step {
+    /* border: 2px solid green; */
+    background-color: #91ac41;
+    grid-area: step-2;
+}
+
+.third-step {
+    /* border: 2px solid yellow; */
+    background-color: #e4b476;
+    grid-area: step-3;
+}
+
+.fourth-step {
+    /* border: 2px solid red; */
+    background-color: #f69dad;
+    grid-area: step-4;
+}
+
+.section-card {
+    /* border: 2px solid red;  */
+    width: 25%;
+}
+
+.section-card p {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.75;
+    margin: 10px 12px;
+}
+
+.section-title {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* OUR FEATURES SECTIOIN */
+
+.store-features {
+    /* border: 2px solid blue; */
+    background-color: #f7eee2;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 4%;
+}
+
+.style-headline {
+    /* border: 2px solid green; */
+    padding: 10px;
+    font-family: 'Caveat', cursive;
+    color: #91ac41;
+    font-size: 24px;
+}
+
+
+.style-title {
+    margin-top: 10px;
+    font-size: 64px;
+}
+
+.style-description {
+    /* border: 2px solid green; */
+    color: #8b8b99;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.circle {
+    /* border: 2px solid red; */
+    height: 150px;
+    width: 150px;
+    background-color: #e3b375;
+    border-radius: 50%;
+    margin: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle:hover {
+    background-color: #5acda6;
+    border: 2px solid green;
+    box-sizing: border-box;
+    transition-duration: 250ms;
+
+    
+    /* transform: scaleX(0.8); */
+}
+
+.features-wrapper {
+    /* border: 2px solid red; */
+    display: flex;
+    margin-top: 30px;
+}
+
+.feature-1 {
+    margin-left: 6%;
+    grid-area: feature-1;
+}
+
+.feature-2 {
+    margin-left: 6%;
+    grid-area: feature-2;
+}
+
+.feature-3 {
+    margin-left: 6%;
+    grid-area: feature-3;
+}
+
+.feature-4 {
+    margin-right: 100px;
+    grid-area: feature-4;
+}
+
+.features-wrapper img {
+    /* border: 2px solid green; */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-110%, -50%);
+    width: 45%;
+    height: 45%;
+    filter: invert(1);
+}
+
+.feature-card {
+    /* border: 2px solid green; */
+    width: 22%;
+}
+
+.feature-card p {
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 16px;
+    color: #8b8b99;
+}
+
+/* TESTIMONIALS SECTION */
+
+.testimonials {
+    text-align: center;
+}
+
+.store-taglines-testimonial {
+    margin-top: 8%;
+}
+
+.testimonial-card-wrapper {
+    display: flex;
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: auto;
+}
+
+.testimonial-card {
+    margin-top: 30px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid green; */
+    background-color: #f3f4fd;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+.testimonial-card img {
+    /* margin-top: 10px; */
+    padding: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.testimonial-card:hover {
+    box-shadow: 4px 4px 5px #f8ecd6;
+    transition-duration: 0.5sec;
+}
+
+.alumini-feedback, .alumini-designation {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    font-style: italic;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
+    line-height: 1.50;
+}
+
+.alumini-name {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/*   ***************FOLLOW US SECTION STTART HERE******************* */
+
+.follow-us-wrapper {
+    margin-top: 10%;
+    /* border: 1px solid red; */
+    background-color: #20f0aa;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.left-section {
+    width: 70%;
+}
+
+.left-section img {
+    width: 100%;
+    height: auto;
+}
+
+.right-section {
+    background-image: url("/follow-us-right-side.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.follow-us-title {
+    /* border: 2px solid #20f0aa; */
+    padding-top: 20%;
+    font-size: 48px;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+.follow-us-desc {
+    /* border: solid; */
+    margin: 10px 29%;
+    color: #8b8b99;
+    text-align: justify;
+}
+
+form {
+    /* border: 2px solid green; */
+    padding: 5%;
+    text-align: left;
+    margin: 10px 20%;
+}
+
+.email-section input {
+    padding: 5%;
+    margin-left: 18px;
+    color: #8b8b99;
+    text-align: left;
+    width: 80%;
+    border: none;
+    border-radius: 4px;
+    /* border: 2px solid red; */
+    outline: none;
+}
+
+.email-section button {
+    padding: 5% 15%;
+    margin: 18px;
+    margin-top: 5%;
+    background-color: #f69dad;
+    border: none;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    /* border: 2px solid yellow; */
+    outline: none;
+}
+
+.email-section button:hover {
+    background-color: transparent;
+    border: 1px solid #f69dad;
+    color: #f69dad;
+}
+
+/* ****************STATISTICS STARTS HERE **************** */
+
+.statistics {
+    background-color: #e8f8f2;
+}
+
+.stats-wrapper {
+    padding: 5%;
+    /* border: 2px solid red; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.stats-container {
+    /* border: 2px solid yellow; */
+    margin: 2% 5%;
+}
+
+.stats-title {
+    padding: 10px;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.stats-desc {
+    padding: 10px;
+    color: #20f0aa;
+    font-style: italic;
+    letter-spacing: 0.75;
+}
+
+/* ************VIDEO SECTION ************ */
+
+.video {
+    /* border: 2px solid red; */
+    background-color: #F7EEE2;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.video-title {
+    /* border: #5acda6 solid; */
+    font-size: 48px;
+    color: #8b8b99;
+}
+
+.video hr {
+    margin-top: 10px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-vid {
+    margin-top: 5%;
+}
+
+/* ************************CONTACT US LEFT SIDE************************ */
+
+.contact-us {
+    display: flex;
+    text-align: left;
+}
+
+.contact-us-left-side-wrapper {
+    /* border: 2px solid red; */
+    margin-left: 5%;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+}
+
+.title-heading {
+    font-size: 48px;
+    font-weight: bolder;
+    /* border: 2px solid green; */
+    padding: 10px;
+}
+
+.style-contact-us {
+    /* padding: 10% 10% 5% 10%; */
+    padding-top: 10%;
+    margin-left: 10px;
+    font-family: 'Caveat', cursive;
+    color: #91ac41;
+    font-size: 24px;
+}
+
+.contact-us-desc {
+    margin-top: 30px;
+    /* border: 2px solid green; */
+    width: 95%;
+    color: #8b8b99;
+    text-align: justify;
+    letter-spacing: 0.8px;
+    word-spacing: 0.8px;
+}
+
+.stores p {
+    margin-top: 10px;
+    /* border: 2px solid green; */
+    padding-left: 10px;
+    color: #8b8b99;
+    letter-spacing: 0.8px;
+    word-spacing: 0.8px;
+    line-height: 150%;
+}
+
+.london-store {
+    /* border: 2px solid lightcoral; */
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.london-store>h2 {
+    /* color: #5acda6; */
+    text-align: center;
+}
+
+.berlin-store {
+    /* border: 2px solid lightcoral; */
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.stores-container {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+/* ************************CONTACT US RIGHT SIDE************************ */
+
+.contact-us-right-side-wrapper {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    width: 40%;
+    margin-right: 5%;
+}
+
+.input-get-in-touch input, textarea {
+    border: 1px solid grey;
+    border-radius: 8px;
+    width: 100%;
+    padding: 3%;
+    margin-top: 5%;
+    font-size: 14px;
+}
+
+.input-get-in-touch {
+    margin-top: 5%;
+    padding: 9px 44px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-weight: 600;
+    border: 0px;
+    border-radius: 4px;
+}
+
+.input-get-in-touch button:hover {
+    cursor: pointer;
+}
+
+.input-get-in-touch {
+    text-align: left;
+    width: 100%;
+}
+.btn-data{
+    background-color: rgb(170, 210, 54);
+}
+.btn-data:hover{
+    font-size: large ;
+}
+
+
+/* ************************FOOTER SECTION*********************** */
+
+.footer {
+    /* border: 2px solid green; */
+    margin-top: 5%;
+    text-align: center;
+    padding: 3%;
+    background-color: #232323;
+    color: white;
+}
+
+.footer button {
+    /* position: relative; */
+    margin-top: 1%;
+    padding: 9px 34px;
+    background-color: rgb(170, 210, 54);
+    color: white;
+    font-weight: 600;
+    border: 0px;
+    border-radius: 4px;
+}
+
+
+/*  ********************THIS IS FOR RESPONSIENESS ********************8 */
+
+@media screen and (max-width:768px) {
+    nav {
+        /* background-color: green; */
+        box-sizing: border-box;
+        background-color: green;
+       
+    }
+    .steps-section {
+        display: grid;
+        grid-template-areas: 'step-1 step-2 ' 'step-3 step-4';
+    }
+    .section-card {
+        width: 100%;
+    }
+    .features-wrapper {
+        display: grid;
+        grid-template-areas: 'feature-1 feature-2' 'feature-3 feature-4';
+        width: 100%;
+        /* box-sizing: border-box; */
+    }
+    .feature-card {
+        /* border: 1px solid green; */
+        width: 90%;
+        margin: auto;
+    }
+    .testimonial-card-wrapper {
+        display: grid;
+        grid-template-areas: 'testimonial-person1 testimonial-person1 ' 'testimonial-person2 testimonial-person2' 'testimonial-person3 testimonial-person3';
+        ;
+        /* flex-direction: column; */
+    }
+    .testimonial-card {
+        /* border: 1px solid red; */
+        margin: 10px 10px;
+        /* background-color: #5acda6; */
+        /* flex-wrap: wrap; */
+    }
+    .testimonial-person1 {
+        /* background-color: #232323; */
+        grid-area: testimonial-person1;
+        width: 100%;
+    }
+    .testimonial-person2 {
+        grid-area: testimonial-person2;
+        width: 100%;
+    }
+    .testimonial-person3 {
+        grid-area: testimonial-person3;
+        width: 100%;
+    }
+    .left-section img {
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 385px;
+    }
+}
+
+@media screen and (max-width:475px) and (min-width:200px) {
+    /* setting the navigation */
+    /* nav {
+        background-color: red;
+        box-sizing: border-box;
+    }
+    .logo img {
+        margin-left: 5%;
+    }
+    .right-elements a {
+        display: none;
+    } */
+    .nav-ul li a {
+        display: inline-block;
+        padding: 10px 20px;
+        color: black;
+        text-decoration: none;
+    }
+    .nav-ul li a:hover {
+        color: aqua;
+        font-weight: 600;
+        color: black;
+        text-decoration: underline;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav-ul {
+        display: none;
+        flex-direction: column;
+        /* border: 2px solid green; */
+    }
+
+    .nav-ul li{
+        border-bottom: 1px solid black;
+        /* background-color: rgb(235, 177, 177);; */
+        width: 100%;
+        text-align: center  ;
+    }
+    .nav-ul.show {
+        background-color:white;
+        display: flex;
+        width: 100%;
+        /* border: 2px solid rgb(84, 90, 84); */
+
+    }
+    .logo {
+        width: 80px;
+    }
+    .website-title h1 {
+        /* border: 2px solid green; */
+        font-size: 40px;
+        letter-spacing: 1.75px;
+        margin-top: 45%;
+    }
+    .website-title p {
+        /* border: 2px solid green; */
+        margin-top: 20%;
+        width: 100%;
+    }
+    /* setting the steps section */
+    .steps-section {
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    .section-card {
+        /* border: 1px solid green; */
+        width: 100%;
+    }
+    /* setting the features wala section */
+    .style-title {
+        /* border: 2px solid red; */
+        margin-top: 10px;
+        padding: 0px 10px;
+        font-size: 50px;
+    }
+    .features-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .feature-card {
+        /* border: 1px solid green; */
+        width: 90%;
+        margin: auto;
+    }
+    .style-headline {
+        /* border: 2px solid green; */
+        padding: 10px;
+        font-family: 'Caveat', cursive;
+        color: #91ac41;
+        /* font-size: 24px; */
+    }
+    .icon {
+        margin-top: 0%;
+    }
+    /* setting the testimonials section */
+    .testimonial-card-wrapper {
+        flex-direction: column;
+        box-sizing: border-box;
+        /* border: 1px solid green; */
+    }
+    .testimonial-card {
+        width: 100%;
+    }
+    /* setting the follows us sectin */
+    .follow-us-wrapper {
+        flex-direction: column;
+    }
+    .left-section {
+        width: 100%;
+    }
+    .right-section {
+        width: 100%;
+    }
+    .follow-us-desc {
+        /* border: 2px solid green; */
+        margin: 10% 15%;
+        padding: 0px 10px;
+        /* font-size: 14px; */
+    }
+    /* settingt he statistics section  */
+    .stats-wrapper {
+        flex-direction: column;
+        box-sizing: border-box;
+        /* border: 1px solid red; */
+        align-items: center;
+    }
+    .stats-container {
+        width: 100%
+        /* all uncomment once done and check if there is any difference  */
+    }
+    /* video section */
+    .video-title {
+        font-size: 32px;
+    }
+    .main-vid>video {
+        /* border: 2px solid red; */
+        margin-top: 10%;
+        width: 90%;
+        height: auto;
+        box-shadow: 4px 4px 8px pink;
+    }
+    .video {
+        padding-top: 10%;
+        padding-bottom: 20%;
+    }
+    /* setting the contact us section */
+    .contact-us {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-us-left-side-wrapper {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-top: 5%;
+        box-sizing: border-box;
+    }
+    .style-contact-us {
+        /* border: 2px solid green; */
+        margin-top: 10%;
+        padding: 0px;
+        margin-left: 10px;
+    }
+    .contact-us-desc {
+        /* border: 2px solid red; */
+        width: 90%;
+        margin: auto;
+        margin-top: 5%;
+    }
+    .title-heading {
+        font-size: 38px;
+        font-weight: bolder;
+        /* border: 2px solid palevioletred; */
+        padding: 10px;
+    }
+    .berlin-store h2 {
+        /* border: 2px solid green; */
+        width: 100%;
+        font-size: 32px;
+    }
+    .berlin-store p {
+        text-align: center;
+        /* border:  solid red; */
+        width: 100%;
+    }
+    .contact-us-right-side-wrapper {
+        /* border: 2px solid lightcoral; */
+        margin: 0px;
+        margin-top: 80px;
+        width: 100%;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    .input-get-in-touch {
+        /* border: 2px solid green; */
+        margin-right: 10%;
+        padding: 10%;
+        box-sizing: border-box;
+        /* margin-left: 10%; */
+    }
+    .input-get-in-touch button {
+        /* background-color: #20f0aa; */
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
